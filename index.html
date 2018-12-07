@@ -31,7 +31,7 @@
 	            var letterStyle = {
 		            padding: 10,
 		            margin: 10,
-		            backgroundColor: "#ffde00",
+		            backgroundColor: this.props.bgcolor,
 		            color: "#333",
 		            display: "inline-block",
 		            fontFamily: "monospace",
@@ -45,9 +45,9 @@
 
 		ReactDOM.render(
 		<div>
-			<HelloWorld name="Ahmed"/>
-		 	<HelloWorld name="Hamada"/>
-			<HelloWorld name="Mido"/>
+			<HelloWorld name="Ahmed" bgcolor="#58B3FF"/>
+		 	<HelloWorld name="Hamada" bgcolor="#FF605F"/>
+			<HelloWorld name="Mido" bgcolor="#FFD52E"/>
 		</div>,
 		  document.querySelector("#container")
 		);		
