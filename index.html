@@ -27,12 +27,16 @@
 	<script type="text/babel">
 		class HelloWorld extends React.Component {
 		    render() {
-		       return <p>Hello, componentized world!</p>;
+		       return <p>Hello, {this.props.name}!</p>;
 		    }
 		}
 
 		ReactDOM.render(
-		  <HelloWorld/>,
+		<div>
+			<HelloWorld name="Ahmed"/>
+		 	<HelloWorld name="Hamada"/>
+			<HelloWorld name="Mido"/>
+		</div>,
 		  document.querySelector("#container")
 		);		
 	</script>
