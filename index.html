@@ -27,7 +27,19 @@
 	<script type="text/babel">
 		class HelloWorld extends React.Component {
 		    render() {
-		       return <p>Hello, {this.props.name}!</p>;
+
+	            var letterStyle = {
+		            padding: 10,
+		            margin: 10,
+		            backgroundColor: "#ffde00",
+		            color: "#333",
+		            display: "inline-block",
+		            fontFamily: "monospace",
+		            fontSize: 32,
+		            textAlign: "center"
+		        };
+
+		       return <p style={letterStyle}>Hello, {this.props.name}!</p>;
 		    }
 		}
 
