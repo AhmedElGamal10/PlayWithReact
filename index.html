@@ -27,14 +27,14 @@
 	<script type="text/babel">
 		class HelloWorld extends React.Component {
 		    render() {
-    
-			}
+		       return <p>Hello, componentized world!</p>;
+		    }
 		}
 
 		ReactDOM.render(
-			<h1>Sherlock Holmes</h1>,
-			document.querySelector("#container")
-		);
+		  <HelloWorld/>,
+		  document.querySelector("#container")
+		);		
 	</script>
 </body>
 
