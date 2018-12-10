@@ -39,10 +39,14 @@
 
     function showCircles() {
         var circles = []
-        var colors = []
+        var colors = ["#393E41", "#E94F37", "#1C89BF", "#A1D363"];
 
+        for (var i = 0; i < colors.length; i++) {
+            var color = colors[i];
+            circles.push(<Circle key={i + color} bgColor={color}/>)
+        }
 
-        return <Circle bgColor="#9FC530"/>;
+        return circles;
     }
 
     ReactDOM.render(
